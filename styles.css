@@ -337,6 +337,55 @@ nav a:hover {
     border: 2px solid #333;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
+/* Dropdown Container */
+nav a, 
+.dropbtn { /* Make the dropdown button match the navigation links */
+    display: inline-block;
+    padding: 10px 15px; /* Match the padding with other links */
+    text-decoration: none;
+    color: #333; /* Same color as other links */
+    font-size: 16px; /* Ensure consistent font size */
+    background-color: transparent; /* Remove background for consistency */
+    border: none;
+    cursor: pointer;
+    vertical-align: middle; /* Align it vertically with other links */
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+    justify-content: space-around;
+}
+
+/* Dropdown Content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #00a85a;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 8px 12px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #555;
+}
+
+/* Show Dropdown on Hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change Button Appearance on Hover */
+.dropdown:hover .dropbtn {
+    background-color: #ddd;
+}
 
 /* Footer Styles */
 footer {
