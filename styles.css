@@ -7,7 +7,8 @@ body {
     background-color: #f5f5f5;
     color: #333;
 }
- /* Overall font size adjustments */
+ 
+/* Overall font size adjustments */
 @media (max-width: 768px) {
     body {
         font-size: 16px; /* Ensure readability on smaller screens */
@@ -38,7 +39,7 @@ body {
 
 /* Header Styles */
 .green {
-    color: #00a85a; /* Green color */
+    color: #1ec239; /* Green color */
 }
 
 .orange {
@@ -83,7 +84,7 @@ header img.logo {
     width: 100px;
     height: 100px;
     border-radius: 100%;
-    border: 2px solid #00a85a;
+    border: 2px solid #1ec239;
     margin-left: 20px;
     position: absolute; /* Remove from normal flow to center h1 and h2 */
     left: 20px; /* Keep the logo on the left */
@@ -96,7 +97,6 @@ header img.flag {
     position: absolute; /* Remove from normal flow to center h1 and h2 */
     right: 20px; /* Keep the logo on the left */
 }
-
 
 /* For screens that are 768px wide or less */
 @media (max-width: 768px) {
@@ -127,16 +127,25 @@ header img.flag {
         text-align: center;
         margin-left: 0;
     }
-
     nav {
-        flex-direction: column; /* Stack navigation links vertically */
-        text-align: center;
+        flex-direction: row;
+        align-items: center;
+        justify-content: left;
+        background-color: #1ec239;
     }
 
     nav a {
-        padding: 10px;
+        color: #fff;
+        padding: 14px 20px;
+        text-decoration: none;
+        text-align: center;
+       
     }
+    nav a:hover {
+    background-color: #555;
 }
+}
+
 /* For screens that are 768px wide or less */
 @media (max-width: 768px) {
     .photos img {
@@ -163,11 +172,14 @@ header img.flag {
         font-size: 1em;
     }
 }
+/* Navigation menu for smaller screens */
+
+
 /* Navigation Styles */
 nav {
     display: flex;
     justify-content: left;
-    background-color: #00a85a;
+    background-color: #1ec239;
 }
 
 nav a {
@@ -325,56 +337,6 @@ nav a:hover {
     border: 2px solid #333;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
-/* Dropdown Container */
-nav a, 
-.dropbtn { /* Make the dropdown button match the navigation links */
-    display: inline-block;
-    padding: 10px 15px; /* Match the padding with other links */
-    text-decoration: none;
-    color: #333; /* Same color as other links */
-    font-size: 16px; /* Ensure consistent font size */
-    background-color: transparent; /* Remove background for consistency */
-    border: none;
-    cursor: pointer;
-    vertical-align: middle; /* Align it vertically with other links */
-}
-.dropdown {
-    position: relative;
-    display: inline-block;
-    justify-content: space-around;
-}
-
-/* Dropdown Content */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #00a85a;
-    min-width: 150px;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-}
-
-.dropdown-content a {
-    color: #fff;
-    padding: 8px 12px;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown-content a:hover {
-    background-color: #555;
-}
-
-/* Show Dropdown on Hover */
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-/* Change Button Appearance on Hover */
-.dropdown:hover .dropbtn {
-    background-color: #ddd;
-}
-
 
 /* Footer Styles */
 footer {
