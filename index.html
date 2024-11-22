@@ -142,6 +142,165 @@
             font-size: 2em;
             cursor: pointer;
         }
+        /* For tablets and smaller screens */
+@media (max-width: 1024px) {
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        padding: 20px;
+    }
+
+    .gallery-item {
+        position: relative;
+        overflow: hidden;
+        border: 5px solid #333; /* Thick border */
+        background-color: #fff;
+        border-radius: 8px; /* Optional: Add rounded corners */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+        opacity: 0; /* Start with images hidden */
+        transform: translateY(20px); /* Start slightly lower */
+        transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Smooth transition */
+    }
+     @keyframes popUpEffect {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.05);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.pop-up {
+    animation: popUpEffect 0.6s ease-in-out forwards;
+}
+
+    .gallery-item.pop-up {
+        opacity: 1; /* Make image visible */
+        transform: translateY(0); /* Move it to its original position */
+    }
+
+    .gallery-item .caption {
+        font-size: 0.9em; /* Smaller caption text */
+        padding: 4px;
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        padding: 20px;
+    }
+
+    .gallery-item {
+        position: relative;
+        overflow: hidden;
+        border: 5px solid #333; /* Thick border */
+        background-color: #fff;
+        border-radius: 8px; /* Optional: Add rounded corners */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+        opacity: 0; /* Start with images hidden */
+        transform: translateY(20px); /* Start slightly lower */
+        transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Smooth transition */
+    }
+@keyframes popUpEffect {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.05);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.pop-up {
+    animation: popUpEffect 0.6s ease-in-out forwards;
+}
+
+    .gallery-item.pop-up {
+        opacity: 1; /* Make image visible */
+        transform: translateY(0); /* Move it to its original position */
+    }
+
+    .gallery-item .caption {
+        font-size: 0.8em; /* Smaller caption text */
+        padding: 3px;
+    }
+
+    .lightbox img {
+        max-width: 90%;
+        max-height: 70%; /* Adjusted size for smaller screens */
+    }
+}
+
+/* For very small screens (like smartphones) */
+@media (max-width: 480px) {
+   .gallery {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        padding: 20px;
+    }
+
+    .gallery-item {
+        position: relative;
+        overflow: hidden;
+        border: 5px solid #333; /* Thick border */
+        background-color: #fff;
+        border-radius: 8px; /* Optional: Add rounded corners */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+        opacity: 0; /* Start with images hidden */
+        transform: translateY(20px); /* Start slightly lower */
+        transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Smooth transition */
+    }
+@keyframes popUpEffect {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.05);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.pop-up {
+    animation: popUpEffect 0.6s ease-in-out forwards;
+}
+
+    .gallery-item.pop-up {
+        opacity: 1; /* Make image visible */
+        transform: translateY(0); /* Move it to its original position */
+    }
+
+    .gallery-item .caption {
+        font-size: 0.7em; /* Smaller caption text */
+        padding: 2px;
+    }
+
+    .lightbox img {
+        max-width: 95%;
+        max-height: 60%; /* Adjusted size for very small screens */
+    }
+}
     </style>
 </head>
 
