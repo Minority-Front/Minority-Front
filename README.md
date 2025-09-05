@@ -50,10 +50,10 @@ The contact form sends emails to `arshiiyan@gmail.com` using Formspree with:
 
 ### Step 1: Repository Setup
 ✅ **Already completed!** Your code is now hosted at:
-`https://github.com/imarshiyan/Minority-Front`
+`https://github.com/Minority-Front/Minority-Front`
 
 ### Step 2: Enable GitHub Pages
-1. Go to your repository: `https://github.com/imarshiyan/Minority-Front`
+1. Go to your repository: `https://github.com/Minority-Front/Minority-Front`
 2. Click the "Settings" tab
 3. Navigate to "Pages" section in the left sidebar
 4. Under "Source", select "Deploy from a branch"
@@ -62,7 +62,7 @@ The contact form sends emails to `arshiiyan@gmail.com` using Formspree with:
 7. Click "Save"
 
 ### Step 3: Access Your Website
-Your website will be available at: `https://imarshiyan.github.io/Minority-Front/`
+Your website will be available at: `https://Minority-Front.github.io/Minority-Front/`
 
 **Note**: It may take a few minutes for GitHub Pages to deploy your site after enabling it.
 
