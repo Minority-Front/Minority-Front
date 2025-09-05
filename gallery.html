@@ -98,27 +98,59 @@
 </head>
 
 <body>
-    <header>
-        <img src="assets/logo2.jpg" alt="logo" class="logo">
-        <div class="title-container">
-            <h1><span class="green">M</span>inority <span class="orange">F</span>ront</h1>
-            <h2>NGO for Minority Rights & Protection</h2>
-            <img src="assets/flag2.png" alt="flag" class="flag">
-
+    <header style="background: linear-gradient(135deg, #2c3e50, #34495e); color: #fff; padding: 8px 20px; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.15); transition: all 0.3s ease;">
+        <!-- Animated background particles -->
+        <div class="bg-particle" style="position: absolute; top: 20%; left: 10%; width: 6px; height: 6px; background: rgba(0,168,90,0.3); border-radius: 50%; animation: float 6s ease-in-out infinite;"></div>
+        <div class="bg-particle" style="position: absolute; top: 60%; right: 15%; width: 4px; height: 4px; background: rgba(255,165,0,0.4); border-radius: 50%; animation: float 8s ease-in-out infinite 2s;"></div>
+        <div class="bg-particle" style="position: absolute; bottom: 30%; left: 80%; width: 5px; height: 5px; background: rgba(33,150,243,0.3); border-radius: 50%; animation: float 7s ease-in-out infinite 4s;"></div>
+        
+        <img src="assets/logo2.jpg" alt="logo" class="logo" style="width: 90px; height: 90px; border-radius: 50%; border: 3px solid #00a85a; margin-left: 20px; position: absolute; left: 20px; transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); cursor: pointer; z-index: 10;" onmouseover="this.style.transform='scale(1.1) rotate(5deg)'; this.style.borderColor='#ffa500'; this.style.boxShadow='0 8px 25px rgba(0,168,90,0.4)'" onmouseout="this.style.transform='scale(1) rotate(0deg)'; this.style.borderColor='#00a85a'; this.style.boxShadow='none'">
+        
+        <div class="title-container" style="display: flex; flex-direction: column; align-items: center; position: relative; z-index: 5;">
+            <h1 style="margin: 0; padding: 0; font-size: 3em; font-weight: 700; letter-spacing: -1px; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); transition: all 0.3s ease; cursor: pointer;" onmouseover="this.style.transform='scale(1.05)'; this.style.textShadow='3px 3px 6px rgba(0,0,0,0.5)'" onmouseout="this.style.transform='scale(1)'; this.style.textShadow='2px 2px 4px rgba(0,0,0,0.3)'">
+                <span style="color: #00a85a; transition: color 0.3s ease;">M</span>inority 
+                <span style="color: #ffa500; transition: color 0.3s ease;">F</span>ront
+            </h1>
+            <h2 style="margin: 2px 0 0 0; padding: 0; font-size: 1.4em; font-weight: 400; color: #bdc3c7; text-shadow: 1px 1px 2px rgba(0,0,0,0.3); animation: fadeInUp 1s ease-out 0.5s both;">NGO for Minority Rights & Protection</h2>
+            <div style="width: 80px; height: 3px; background: linear-gradient(90deg, #00a85a, #ffa500); margin-top: 5px; border-radius: 2px; animation: fadeInUp 1s ease-out 0.8s both;"></div>
         </div>
+        
+        <img src="assets/flag2.png" alt="flag" class="flag" style="width: 120px; height: auto; position: absolute; right: 15px; top: 72%; transform: translateY(-50%); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); cursor: pointer; z-index: 10; filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.3));" onmouseover="this.style.transform='translateY(-50%) scale(1.1) rotate(-3deg)'; this.style.filter='drop-shadow(3px 3px 6px rgba(0,0,0,0.4)) brightness(1.1)'" onmouseout="this.style.transform='translateY(-50%) scale(1) rotate(0deg)'; this.style.filter='drop-shadow(2px 2px 4px rgba(0,0,0,0.3))'">
     </header>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <div class="dropdown">
-            <a href="gallery.html" class="dropbtn">Gallery</a>
-            <div class="dropdown-content">
-                <a href="#category1">Photos</a>
-                <a href="#category2">Videos</a>
-            </div>
-        </div>
-        <a href="contact.html">Contact</a>
+    
+    <nav style="background: linear-gradient(135deg, #34495e, #2c3e50); padding: 0; text-align: center; box-shadow: 0 2px 15px rgba(0,0,0,0.15); position: sticky; top: 0; z-index: 1000; backdrop-filter: blur(10px);">
+        <a href="index.html" class="nav-link" style="display: inline-block; color: white; text-decoration: none; padding: 18px 32px; margin: 0 2px; transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); font-weight: 500; position: relative; overflow: hidden;" onmouseover="this.style.background='linear-gradient(135deg, #00a85a, #17a82a)'; this.style.transform='translateY(-3px)'; this.style.boxShadow='0 8px 20px rgba(0,168,90,0.3)'" onmouseout="this.style.background='transparent'; this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+            <span style="position: relative; z-index: 2;">Home</span>
+        </a>
+        <a href="about.html" class="nav-link" style="display: inline-block; color: white; text-decoration: none; padding: 18px 32px; margin: 0 2px; transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); font-weight: 500; position: relative; overflow: hidden;" onmouseover="this.style.background='linear-gradient(135deg, #ffa500, #ff8f00)'; this.style.transform='translateY(-3px)'; this.style.boxShadow='0 8px 20px rgba(255,165,0,0.3)'" onmouseout="this.style.background='transparent'; this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+            <span style="position: relative; z-index: 2;">About Us</span>
+        </a>
+        <a href="gallery.html" class="nav-link active" style="display: inline-block; color: white; text-decoration: none; padding: 18px 32px; margin: 0 2px; transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); font-weight: 500; position: relative; overflow: hidden; background: linear-gradient(135deg, #2196f3, #1976d2); box-shadow: 0 4px 15px rgba(33,150,243,0.3);" onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 8px 20px rgba(33,150,243,0.4)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(33,150,243,0.3)'">
+            <span style="position: relative; z-index: 2;">Gallery</span>
+        </a>
+        <a href="contact.html" class="nav-link" style="display: inline-block; color: white; text-decoration: none; padding: 18px 32px; margin: 0 2px; transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); font-weight: 500; position: relative; overflow: hidden;" onmouseover="this.style.background='linear-gradient(135deg, #9c27b0, #7b1fa2)'; this.style.transform='translateY(-3px)'; this.style.boxShadow='0 8px 20px rgba(156,39,176,0.3)'" onmouseout="this.style.background='transparent'; this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+            <span style="position: relative; z-index: 2;">Contact</span>
+        </a>
     </nav>
+    
+    <!-- Gallery Filter Controls -->
+    <div style="text-align: center; padding: 20px; background: #f8f9fa;">
+        <h2 style="margin-bottom: 20px;">Interactive Gallery</h2>
+        <div style="display: inline-flex; gap: 15px; background: white; padding: 10px; border-radius: 25px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+            <button onclick="showAll()" class="filter-btn active" style="padding: 10px 20px; border: none; border-radius: 20px; background: #00a85a; color: white; cursor: pointer; transition: all 0.3s ease;">
+                All
+            </button>
+            <button onclick="filterGallery('photo')" class="filter-btn" style="padding: 10px 20px; border: none; border-radius: 20px; background: #f0f0f0; color: #333; cursor: pointer; transition: all 0.3s ease;">
+                Photos
+            </button>
+            <button onclick="filterGallery('video')" class="filter-btn" style="padding: 10px 20px; border: none; border-radius: 20px; background: #f0f0f0; color: #333; cursor: pointer; transition: all 0.3s ease;">
+                Videos
+            </button>
+        </div>
+        <div style="margin-top: 15px;">
+            <input type="text" id="searchGallery" placeholder="Search gallery..." style="padding: 10px 15px; border: 2px solid #ddd; border-radius: 25px; width: 300px; font-size: 16px;" onkeyup="searchGallery()">
+        </div>
+    </div>
     
     <div class="gallery">
         <!-- Repeat this block for each image -->
@@ -129,7 +161,7 @@
         </div>
         <div class="gallery-item" data-type="photo" onclick="openLightbox(this)">
             <img src="assets/photo2.jpg" alt="Dr. Feroz Khan Photo 2">
-            <div class="caption"></div>
+            <div class="caption">Dr. Feroz Khan addressing community gathering on minority rights and social justice issues.</div>
         </div>
         <div class="gallery-item" data-type="photo" onclick="openLightbox(this)">
             <img src="assets/photo3.jpg" alt="Dr. Feroz Khan Photo 3">
@@ -147,7 +179,7 @@
         </div>
         <div class="gallery-item" data-type="video" onclick="openLightbox(this)">
             <iframe src="https://youtube.com/embed/lnMGZXyFZng" frameborder="0" allowfullscreen></iframe>
-            <div class="caption"></div>
+            <div class="caption">Dr. Feroz Khan addressing press conference on minority issues and community development.</div>
         </div>
         <div class="gallery-item" data-type="video" onclick="openLightbox(this)">
             <iframe src="https://youtube.com/embed/lzilge0OpkQ" frameborder="0" allowfullscreen></iframe>
@@ -211,7 +243,7 @@
         </div>
         <div class="gallery-item" data-type="photo" onclick="openLightbox(this)">
             <img src="assets/photo6.jpg" alt="Dr. Feroz Khan Photo 6">
-            <div class="caption">Caption for Photo 1</div>
+            <div class="caption">Dr. Feroz Khan during a community outreach program for minority welfare initiatives.</div>
         </div>
         
         <div class="gallery-item" data-type="photo" onclick="openLightbox(this)">
@@ -229,40 +261,36 @@
                 Releasing Innocent Muslim'youth's in Jail.</div>
         </div>
         <div class="gallery-item" data-type="photo" onclick="openLightbox(this)">
-            <img src="assets/photo16.jpg" alt="Dr. Feroz Khan Photo 6">
-            <div class="caption">Caption for Photo 1</div>
+            <img src="assets/photo16.jpg" alt="Dr. Feroz Khan Photo 16">
+            <div class="caption">Dr. Feroz Khan participating in inter-community dialogue for promoting harmony and understanding.</div>
         </div>
         <div class="gallery-item" data-type="photo" onclick="openLightbox(this)">
-            <img src="assets/photo67.jpg" alt="Dr. Feroz Khan Photo 6">
-            <div class="caption">Caption for Photo 1</div>
+            <img src="assets/photo67.jpg" alt="Dr. Feroz Khan Photo 67">
+            <div class="caption">Community meeting discussing minority educational opportunities and scholarships.</div>
         </div>
         <div class="gallery-item" data-type="photo" onclick="openLightbox(this)">
-            <img src="assets/photo93.jpg" alt="Dr. Feroz Khan Photo 6">
-            <div class="caption">Caption for Photo 1</div>
+            <img src="assets/photo93.jpg" alt="Dr. Feroz Khan Photo 93">
+            <div class="caption">Dr. Feroz Khan at a conference on minority rights and constitutional protections.</div>
         </div>
         <div class="gallery-item" data-type="photo" onclick="openLightbox(this)">
-            <img src="assets/photo75.jpg" alt="Dr. Feroz Khan Photo 6">
-            <div class="caption">Caption for Photo 1</div>
+            <img src="assets/photo75.jpg" alt="Dr. Feroz Khan Photo 75">
+            <div class="caption">Social welfare program organized by Minority Front for underprivileged communities.</div>
         </div>
         <div class="gallery-item" data-type="photo" onclick="openLightbox(this)">
-            <img src="assets/photo90.jpg" alt="Dr. Feroz Khan Photo 6">
-            <div class="caption">Caption for Photo 1</div>
+            <img src="assets/photo90.jpg" alt="Dr. Feroz Khan Photo 90">
+            <div class="caption">Dr. Feroz Khan meeting with community leaders to discuss development initiatives.</div>
         </div>
         <div class="gallery-item" data-type="photo" onclick="openLightbox(this)">
-            <img src="assets/photo88.jpg" alt="Dr. Feroz Khan Photo 6">
-            <div class="caption">Caption for Photo 1</div>
+            <img src="assets/photo88.jpg" alt="Dr. Feroz Khan Photo 88">
+            <div class="caption">Award ceremony recognizing contributions to minority welfare and social development.</div>
         </div>
         <div class="gallery-item" data-type="photo" onclick="openLightbox(this)">
-            <img src="assets/photo83.jpg" alt="Dr. Feroz Khan Photo 6">
-            <div class="caption">Caption for Photo 1</div>
+            <img src="assets/photo83.jpg" alt="Dr. Feroz Khan Photo 83">
+            <div class="caption">Dr. Feroz Khan during a public rally advocating for minority rights and justice.</div>
         </div>
         <div class="gallery-item" data-type="photo" onclick="openLightbox(this)">
-            <img src="assets/photo101.jpg" alt="Dr. Feroz Khan Photo 6">
-            <div class="caption">Caption for Photo 1</div>
-        </div>
-        <div class="gallery-item" data-type="photo" onclick="openLightbox(this)">
-            <img src="assets/photo97.jpg" alt="Dr. Feroz Khan Photo 6">
-            <div class="caption">Caption for Photo 1</div>
+            <img src="assets/photo97.jpg" alt="Dr. Feroz Khan Photo 97">
+            <div class="caption">Educational seminar on minority empowerment and skill development programs.</div>
         </div>
 
         <!-- Add more gallery-item blocks for each photo -->
@@ -277,82 +305,189 @@
         <p>&copy; 2024 Minority Front NGO for Minority Rights and Protection. All rights reserved.</p>
     </footer>
     <script>
+        // Enhanced gallery filtering with animations
         function filterGallery(type) {
-            // Get all gallery items
             const items = document.querySelectorAll('.gallery-item');
+            const buttons = document.querySelectorAll('.filter-btn');
             
-            // Loop through each item and toggle visibility
-            items.forEach(item => {
-                if (item.dataset.type === type) {
-                    item.style.display = 'block'; // Show matching items
+            // Update active button
+            buttons.forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+            updateButtonStyles();
+            
+            // Filter items with animation
+            items.forEach((item, index) => {
+                setTimeout(() => {
+                    if (item.dataset.type === type) {
+                        item.style.display = 'block';
+                        item.style.opacity = '0';
+                        item.style.transform = 'scale(0.8)';
+                        setTimeout(() => {
+                            item.style.opacity = '1';
+                            item.style.transform = 'scale(1)';
+                        }, 50);
+                    } else {
+                        item.style.opacity = '0';
+                        item.style.transform = 'scale(0.8)';
+                        setTimeout(() => {
+                            item.style.display = 'none';
+                        }, 300);
+                    }
+                }, index * 50);
+            });
+        }
+
+        function showAll() {
+            const items = document.querySelectorAll('.gallery-item');
+            const buttons = document.querySelectorAll('.filter-btn');
+            
+            // Update active button
+            buttons.forEach(btn => btn.classList.remove('active'));
+            document.querySelector('button[onclick="showAll()"]').classList.add('active');
+            updateButtonStyles();
+            
+            // Show all items with staggered animation
+            items.forEach((item, index) => {
+                setTimeout(() => {
+                    item.style.display = 'block';
+                    item.style.opacity = '0';
+                    item.style.transform = 'scale(0.8)';
+                    setTimeout(() => {
+                        item.style.opacity = '1';
+                        item.style.transform = 'scale(1)';
+                    }, 50);
+                }, index * 30);
+            });
+        }
+
+        function updateButtonStyles() {
+            const buttons = document.querySelectorAll('.filter-btn');
+            buttons.forEach(btn => {
+                if (btn.classList.contains('active')) {
+                    btn.style.background = '#00a85a';
+                    btn.style.color = 'white';
+                    btn.style.transform = 'translateY(-2px)';
+                    btn.style.boxShadow = '0 4px 12px rgba(0,168,90,0.3)';
                 } else {
-                    item.style.display = 'none'; // Hide non-matching items
+                    btn.style.background = '#f0f0f0';
+                    btn.style.color = '#333';
+                    btn.style.transform = 'translateY(0)';
+                    btn.style.boxShadow = 'none';
                 }
             });
         }
-    
-        // Add event listeners for the dropdown menu
-        document.querySelector('.dropdown-content a[href="#category1"]').addEventListener('click', (e) => {
-            e.preventDefault(); // Prevent default link behavior
-            filterGallery('photo'); // Show photos only
-        });
-    
-        document.querySelector('.dropdown-content a[href="#category2"]').addEventListener('click', (e) => {
-            e.preventDefault(); // Prevent default link behavior
-            filterGallery('video'); // Show videos only
-        });
-         // Set default filter to 'photo' on page load
+
+        // Search functionality
+        function searchGallery() {
+            const searchTerm = document.getElementById('searchGallery').value.toLowerCase();
+            const items = document.querySelectorAll('.gallery-item');
+            
+            items.forEach(item => {
+                const caption = item.querySelector('.caption').textContent.toLowerCase();
+                const alt = item.querySelector('img, iframe').alt || '';
+                
+                if (caption.includes(searchTerm) || alt.toLowerCase().includes(searchTerm)) {
+                    item.style.display = 'block';
+                    item.style.opacity = '1';
+                    item.style.transform = 'scale(1)';
+                } else {
+                    item.style.opacity = '0.3';
+                    item.style.transform = 'scale(0.95)';
+                }
+            });
+        }
+
+        // Enhanced lightbox functionality
+        function openLightbox(element) {
+            const video = element.querySelector('video');
+            const iframe = element.querySelector('iframe');
+            const img = element.querySelector('img');
+            const caption = element.querySelector('.caption').innerText;
+
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+            const lightboxCaption = document.getElementById('lightbox-caption');
+
+            lightboxCaption.innerText = caption;
+            lightbox.classList.add('active');
+            
+            // Add entrance animation
+            lightbox.style.opacity = '0';
+            setTimeout(() => {
+                lightbox.style.opacity = '1';
+            }, 10);
+
+            if (video) {
+                lightboxImg.style.display = 'none';
+                const videoClone = video.cloneNode(true);
+                videoClone.controls = true;
+                videoClone.style.maxWidth = '80%';
+                videoClone.style.maxHeight = '80%';
+                lightboxCaption.insertAdjacentElement('beforebegin', videoClone);
+            } else if (iframe) {
+                lightboxImg.style.display = 'none';
+                const iframeClone = iframe.cloneNode(true);
+                iframeClone.style.width = '80%';
+                iframeClone.style.height = '60%';
+                iframeClone.style.minHeight = '400px';
+                lightboxCaption.insertAdjacentElement('beforebegin', iframeClone);
+            } else if (img) {
+                lightboxImg.style.display = 'block';
+                lightboxImg.src = img.src;
+                lightboxImg.style.transform = 'scale(0.8)';
+                setTimeout(() => {
+                    lightboxImg.style.transform = 'scale(1)';
+                }, 10);
+            }
+        }
+
+        function closeLightbox() {
+            const lightbox = document.getElementById('lightbox');
+            lightbox.style.opacity = '0';
+            
+            setTimeout(() => {
+                lightbox.classList.remove('active');
+                const video = lightbox.querySelector('video');
+                const iframe = lightbox.querySelector('iframe');
+                
+                if (video) video.remove();
+                if (iframe) iframe.remove();
+            }, 300);
+        }
+
+        // Initialize gallery with animations
         document.addEventListener('DOMContentLoaded', () => {
-        filterGallery('photo'); // Default to showing photos
-    });
+            // Add transition styles to gallery items
+            const items = document.querySelectorAll('.gallery-item');
+            items.forEach((item, index) => {
+                item.style.transition = 'all 0.3s ease';
+                item.style.opacity = '0';
+                item.style.transform = 'translateY(30px)';
+                
+                // Staggered entrance animation
+                setTimeout(() => {
+                    item.style.opacity = '1';
+                    item.style.transform = 'translateY(0)';
+                }, index * 100);
+            });
+
+            // Show photos by default
+            setTimeout(() => {
+                filterGallery('photo');
+            }, 1000);
+            
+            // Add keyboard navigation for lightbox
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && document.getElementById('lightbox').classList.contains('active')) {
+                    closeLightbox();
+                }
+            });
+
+            // Update button styles on load
+            updateButtonStyles();
+        });
     </script>
-    
 
-    
-    <script>
-       function openLightbox(element) {
-    const video = element.querySelector('video');
-    const iframe = element.querySelector('iframe');
-    const img = element.querySelector('img');
-    const caption = element.querySelector('.caption').innerText;
-
-    const lightboxImg = document.getElementById('lightbox-img');
-    const lightboxCaption = document.getElementById('lightbox-caption');
-
-    lightboxCaption.innerText = caption;
-    document.getElementById('lightbox').classList.add('active');
-
-    if (video) {
-        // Display video in lightbox
-        lightboxImg.style.display = 'none';
-        const videoClone = video.cloneNode(true);
-        videoClone.controls = true;
-        lightboxCaption.insertAdjacentElement('beforebegin', videoClone);
-    } else if (iframe) {
-        // Display iframe in lightbox
-        lightboxImg.style.display = 'none';
-        const iframeClone = iframe.cloneNode(true);
-        iframeClone.style.width = '100%';
-        iframeClone.style.height = '100%';
-        lightboxCaption.insertAdjacentElement('beforebegin', iframeClone);
-    } else if (img) {
-        // Display image in lightbox
-        lightboxImg.style.display = 'block';
-        lightboxImg.src = img.src;
-    }
-}
-
-function closeLightbox() {
-    document.getElementById('lightbox').classList.remove('active');
-    const lightbox = document.getElementById('lightbox');
-    const video = lightbox.querySelector('video');
-    const iframe = lightbox.querySelector('iframe');
-    
-    if (video) video.remove();
-    if (iframe) iframe.remove();
-}
-
-    </script>
 </body>
 
 </html>

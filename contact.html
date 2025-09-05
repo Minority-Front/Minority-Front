@@ -66,37 +66,73 @@
     </style>
 </head>
 <body>
-    <header>
-        <img src="assets/logo2.jpg" alt="logo" class="logo">
-        <div class="title-container">
-            <h1><span class="green">M</span>inority <span class="orange">F</span>ront</h1>
-            <h2>NGO for Minority Rights & Protection</h2>
-            <img src="assets/flag2.png" alt="flag" class="flag">
-
+    <header style="background: linear-gradient(135deg, #2c3e50, #34495e); color: #fff; padding: 8px 20px; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.15); transition: all 0.3s ease;">
+        <!-- Animated background particles -->
+        <div class="bg-particle" style="position: absolute; top: 20%; left: 10%; width: 6px; height: 6px; background: rgba(0,168,90,0.3); border-radius: 50%; animation: float 6s ease-in-out infinite;"></div>
+        <div class="bg-particle" style="position: absolute; top: 60%; right: 15%; width: 4px; height: 4px; background: rgba(255,165,0,0.4); border-radius: 50%; animation: float 8s ease-in-out infinite 2s;"></div>
+        <div class="bg-particle" style="position: absolute; bottom: 30%; left: 80%; width: 5px; height: 5px; background: rgba(33,150,243,0.3); border-radius: 50%; animation: float 7s ease-in-out infinite 4s;"></div>
+        
+        <img src="assets/logo2.jpg" alt="logo" class="logo" style="width: 90px; height: 90px; border-radius: 50%; border: 3px solid #00a85a; margin-left: 20px; position: absolute; left: 20px; transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); cursor: pointer; z-index: 10;" onmouseover="this.style.transform='scale(1.1) rotate(5deg)'; this.style.borderColor='#ffa500'; this.style.boxShadow='0 8px 25px rgba(0,168,90,0.4)'" onmouseout="this.style.transform='scale(1) rotate(0deg)'; this.style.borderColor='#00a85a'; this.style.boxShadow='none'">
+        
+        <div class="title-container" style="display: flex; flex-direction: column; align-items: center; position: relative; z-index: 5;">
+            <h1 style="margin: 0; padding: 0; font-size: 3em; font-weight: 700; letter-spacing: -1px; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); transition: all 0.3s ease; cursor: pointer;" onmouseover="this.style.transform='scale(1.05)'; this.style.textShadow='3px 3px 6px rgba(0,0,0,0.5)'" onmouseout="this.style.transform='scale(1)'; this.style.textShadow='2px 2px 4px rgba(0,0,0,0.3)'">
+                <span style="color: #00a85a; transition: color 0.3s ease;">M</span>inority 
+                <span style="color: #ffa500; transition: color 0.3s ease;">F</span>ront
+            </h1>
+            <h2 style="margin: 2px 0 0 0; padding: 0; font-size: 1.4em; font-weight: 400; color: #bdc3c7; text-shadow: 1px 1px 2px rgba(0,0,0,0.3); animation: fadeInUp 1s ease-out 0.5s both;">NGO for Minority Rights & Protection</h2>
+            <div style="width: 80px; height: 3px; background: linear-gradient(90deg, #00a85a, #ffa500); margin-top: 5px; border-radius: 2px; animation: fadeInUp 1s ease-out 0.8s both;"></div>
         </div>
+        
+        <img src="assets/flag2.png" alt="flag" class="flag" style="width: 120px; height: auto; position: absolute; right: 15px; top: 72%; transform: translateY(-50%); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); cursor: pointer; z-index: 10; filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.3));" onmouseover="this.style.transform='translateY(-50%) scale(1.1) rotate(-3deg)'; this.style.filter='drop-shadow(3px 3px 6px rgba(0,0,0,0.4)) brightness(1.1)'" onmouseout="this.style.transform='translateY(-50%) scale(1) rotate(0deg)'; this.style.filter='drop-shadow(2px 2px 4px rgba(0,0,0,0.3))'">
     </header>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="contact.html">Contact</a>
+    
+    <nav style="background: linear-gradient(135deg, #34495e, #2c3e50); padding: 0; text-align: center; box-shadow: 0 2px 15px rgba(0,0,0,0.15); position: sticky; top: 0; z-index: 1000; backdrop-filter: blur(10px);">
+        <a href="index.html" class="nav-link" style="display: inline-block; color: white; text-decoration: none; padding: 18px 32px; margin: 0 2px; transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); font-weight: 500; position: relative; overflow: hidden;" onmouseover="this.style.background='linear-gradient(135deg, #00a85a, #17a82a)'; this.style.transform='translateY(-3px)'; this.style.boxShadow='0 8px 20px rgba(0,168,90,0.3)'" onmouseout="this.style.background='transparent'; this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+            <span style="position: relative; z-index: 2;">Home</span>
+        </a>
+        <a href="about.html" class="nav-link" style="display: inline-block; color: white; text-decoration: none; padding: 18px 32px; margin: 0 2px; transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); font-weight: 500; position: relative; overflow: hidden;" onmouseover="this.style.background='linear-gradient(135deg, #ffa500, #ff8f00)'; this.style.transform='translateY(-3px)'; this.style.boxShadow='0 8px 20px rgba(255,165,0,0.3)'" onmouseout="this.style.background='transparent'; this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+            <span style="position: relative; z-index: 2;">About Us</span>
+        </a>
+        <a href="gallery.html" class="nav-link" style="display: inline-block; color: white; text-decoration: none; padding: 18px 32px; margin: 0 2px; transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); font-weight: 500; position: relative; overflow: hidden;" onmouseover="this.style.background='linear-gradient(135deg, #2196f3, #1976d2)'; this.style.transform='translateY(-3px)'; this.style.boxShadow='0 8px 20px rgba(33,150,243,0.3)'" onmouseout="this.style.background='transparent'; this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+            <span style="position: relative; z-index: 2;">Gallery</span>
+        </a>
+        <a href="contact.html" class="nav-link active" style="display: inline-block; color: white; text-decoration: none; padding: 18px 32px; margin: 0 2px; transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); font-weight: 500; position: relative; overflow: hidden; background: linear-gradient(135deg, #9c27b0, #7b1fa2); box-shadow: 0 4px 15px rgba(156,39,176,0.3);" onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 8px 20px rgba(156,39,176,0.4)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(156,39,176,0.3)'">
+            <span style="position: relative; z-index: 2;">Contact</span>
+        </a>
     </nav>
 
     <div class="content">
         <section class="contact-form">
             <h2>Get in Touch</h2>
-            <form action="submit_form.php" method="post"> <!-- Adjust the action URL to your form handler -->
-                <label for="name">Name</label>
+            <p>We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+            <form action="https://formspree.io/f/arshiiyan@gmail.com" method="POST">
+                <label for="name">Full Name *</label>
                 <input type="text" id="name" name="name" required>
 
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="_replyto" required>
 
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone">
 
+                <label for="subject">Subject *</label>
+                <input type="text" id="subject" name="subject" required>
+
+                <label for="message">Message *</label>
+                <textarea id="message" name="message" rows="6" required placeholder="Please describe how we can help you..."></textarea>
+
+                <input type="hidden" name="_subject" value="New Contact Form Submission - Minority Front">
+                <input type="text" name="_gotcha" style="display:none" tabindex="-1">
+                
                 <button type="submit">Send Message</button>
             </form>
+            
+            <div style="margin-top: 20px; padding: 15px; background: #e8f5e8; border: 1px solid #c3e6cb; border-radius: 5px; color: #155724;">
+                <h4 style="margin: 0 0 10px 0; color: #00a85a;">Alternative Contact Methods:</h4>
+                <p style="margin: 5px 0;">📧 Email: <a href="mailto:arshiiyan@gmail.com" style="color: #00a85a; text-decoration: none;">arshiiyan@gmail.com</a></p>
+                <p style="margin: 5px 0;">📱 Call us for urgent matters</p>
+                <p style="margin: 5px 0; font-size: 0.9em; color: #666;">If you experience any issues with the form above, feel free to email us directly.</p>
+            </div>
         </section>
     </div>
 

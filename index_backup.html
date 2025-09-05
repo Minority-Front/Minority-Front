@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minority Front </title>
+        <title>NGO for Minority Rights and Protection</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="html" href="contact.html">
+    <link rel="html" href="gallery.html">
+</head>
+<body>
+    <header>
+        <img src="assets/logo2.jpg" alt="logo" class="logo">
+        <div class="title-container">
+            <h1><span class="green">M</span>inority <span class="orange">F</span>ront</h1>
+            <h2>NGO for Minority Rights & Protection</h2>
+            <img src="assets/flag2.png" alt="flag" class="flag">
+        </div>
+    </header>
+    
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="content">
+        <section id="about" class="intro">
+            <div class="image-container">
+                <div class="image-wrapper">
+                    <img src="assets/photo8.jpg" alt="image1" class="image1 hero-bg-img">
+                    <img src="assets/photo12.jpg" alt="image2" class="image2 hero-bg-img">
+                    <img src="assets/photo1.jpg" alt="image3" class="image3 hero-bg-img">
+                    <div class="overlay">
+                        <h2>Welcome to Minority Front NGO</h2>
+                        <p>Advocating for the rights and protection of minority communities. Our mission is to ensure every voice is heard and every individual is treated with dignity and respect.</p>
+                        <a href="contact.html" class="cta">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="impact" style="background:#f8f9fa;padding:40px 20px;margin:40px 0;border-radius:10px;">
+            <h2 style="text-align:center;margin-bottom:30px;">Our Impact</h2>
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:30px;text-align:center;">
+                <div class="counter-card" style="background:#fff;padding:30px;border-radius:10px;box-shadow:0 4px 15px rgba(0,0,0,0.1);transition:transform 0.3s ease;">
+                    <div class="counter" data-target="500" style="font-size:3em;font-weight:bold;color:#00a85a;">0</div>
+                    <h4>Families Helped</h4>
+                    <p>Direct assistance to minority families</p>
+                </div>
+                <div class="counter-card" style="background:#fff;padding:30px;border-radius:10px;box-shadow:0 4px 15px rgba(0,0,0,0.1);transition:transform 0.3s ease;">
+                    <div class="counter" data-target="50" style="font-size:3em;font-weight:bold;color:#ffa500;">0</div>
+                    <h4>Legal Cases Won</h4>
+                    <p>Successful advocacy for rights</p>
+                </div>
+                <div class="counter-card" style="background:#fff;padding:30px;border-radius:10px;box-shadow:0 4px 15px rgba(0,0,0,0.1);transition:transform 0.3s ease;">
+                    <div class="counter" data-target="25" style="font-size:3em;font-weight:bold;color:#2196f3;">0</div>
+                    <h4>Years of Service</h4>
+                    <p>Dedicated community service</p>
+                </div>
+                <div class="counter-card" style="background:#fff;padding:30px;border-radius:10px;box-shadow:0 4px 15px rgba(0,0,0,0.1);transition:transform 0.3s ease;">
+                    <div class="counter" data-target="100" style="font-size:3em;font-weight:bold;color:#9c27b0;">0</div>
+                    <h4>Events Organized</h4>
+                    <p>Community awareness programs</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="mission-cards" style="margin:40px 0;">
+            <h2 style="text-align:center;margin-bottom:30px;">Our Core Values</h2>
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:25px;">
+                <div class="value-card" style="background:linear-gradient(135deg,#00a85a,#17a82a);color:white;padding:30px;border-radius:15px;cursor:pointer;transition:all 0.3s ease;" onmouseover="this.style.transform='translateY(-10px) scale(1.02)'" onmouseout="this.style.transform='translateY(0) scale(1)'">
+                    <div style="font-size:3em;margin-bottom:15px;">⚖️</div>
+                    <h3>Justice & Equality</h3>
+                    <p>Fighting for equal rights and opportunities for all minority communities across India.</p>
+                </div>
+                <div class="value-card" style="background:linear-gradient(135deg,#ffa500,#ff8f00);color:white;padding:30px;border-radius:15px;cursor:pointer;transition:all 0.3s ease;" onmouseover="this.style.transform='translateY(-10px) scale(1.02)'" onmouseout="this.style.transform='translateY(0) scale(1)'">
+                    <div style="font-size:3em;margin-bottom:15px;">🤝</div>
+                    <h3>Unity & Harmony</h3>
+                    <p>Promoting interfaith dialogue and cultural understanding to build a harmonious society.</p>
+                </div>
+                <div class="value-card" style="background:linear-gradient(135deg,#2196f3,#1976d2);color:white;padding:30px;border-radius:15px;cursor:pointer;transition:all 0.3s ease;" onmouseover="this.style.transform='translateY(-10px) scale(1.02)'" onmouseout="this.style.transform='translateY(0) scale(1)'">
+                    <div style="font-size:3em;margin-bottom:15px;">📚</div>
+                    <h3>Education & Empowerment</h3>
+                    <p>Empowering communities through education, skill development, and awareness programs.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Interactive JavaScript -->
+    <script>
+        // Counter Animation
+        function animateCounters() {
+            const counters = document.querySelectorAll('.counter');
+            counters.forEach(counter => {
+                const target = parseInt(counter.getAttribute('data-target'));
+                const count = parseInt(counter.innerText);
+                const increment = target / 100;
+                
+                if (count < target) {
+                    counter.innerText = Math.ceil(count + increment);
+                    setTimeout(() => animateCounters(), 20);
+                }
+            });
+        }
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.3,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                    
+                    // Start counter animation when section is visible
+                    if (entry.target.id === 'impact') {
+                        animateCounters();
+                    }
+                }
+            });
+        }, observerOptions);
+
+        // Observe sections for scroll animations
+        document.addEventListener('DOMContentLoaded', () => {
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => {
+                section.style.opacity = '0';
+                section.style.transform = 'translateY(30px)';
+                section.style.transition = 'all 0.6s ease-out';
+                observer.observe(section);
+            });
+
+            // Add hover effects to counter cards
+            const counterCards = document.querySelectorAll('.counter-card');
+            counterCards.forEach(card => {
+                card.addEventListener('mouseenter', () => {
+                    card.style.transform = 'translateY(-10px) scale(1.05)';
+                    card.style.boxShadow = '0 8px 25px rgba(0,0,0,0.15)';
+                });
+                
+                card.addEventListener('mouseleave', () => {
+                    card.style.transform = 'translateY(0) scale(1)';
+                    card.style.boxShadow = '0 4px 15px rgba(0,0,0,0.1)';
+                });
+            });
+
+            // Smooth scroll for navigation links
+            document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+        });
+
+        // Parallax effect for hero section
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const parallax = document.querySelector('.image-wrapper');
+            if (parallax) {
+                const speed = scrolled * 0.5;
+                parallax.style.transform = `translateY(${speed}px)`;
+            }
+        });
+    </script>
+
+    <footer>
+        <p>&copy; 2024 Minority Front NGO for Minority Rights and Protection. All rights reserved.</p>
+        <p>Site by <a href="mailto:arshiiyan@gmail.com" style="color:#ffa500;">arshiiyan@gmail.com</a></p>
+    </footer>
+
+</body>
+</html>
