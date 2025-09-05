@@ -152,19 +152,24 @@ header img.flag {
         margin: 5px 0 0 0 !important;
     }
 
-    /* Navigation improvements */
+    /* Navigation improvements - Keep horizontal on mobile */
     nav {
-        flex-direction: column !important;
+        flex-direction: row !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
         text-align: center;
-        padding: 10px 0 !important;
+        padding: 5px 0 !important;
     }
 
     nav a {
-        display: block !important;
-        padding: 15px 20px !important;
-        margin: 2px 5px !important;
+        display: inline-block !important;
+        padding: 12px 16px !important;
+        margin: 2px 1px !important;
         border-radius: 5px;
-        width: calc(100% - 10px);
+        font-size: 0.9em;
+        flex: 1;
+        min-width: 70px;
+        max-width: 90px;
     }
 
     /* Content sections */
@@ -706,8 +711,10 @@ footer a:hover {
     }
     
     nav a {
-        padding: 12px 15px !important;
-        font-size: 0.9em;
+        padding: 10px 8px !important;
+        font-size: 0.8em !important;
+        min-width: 60px !important;
+        max-width: 80px !important;
     }
 }
 
