@@ -48,23 +48,23 @@ The contact form sends emails to `arshiiyan@gmail.com` using Formspree with:
 
 ## 🚀 Hosting on GitHub Pages
 
-### Step 1: Upload to GitHub
-1. Create a new repository on GitHub (e.g., `Minorityfront`)
-2. Upload all files from the `Minorityfront` folder to your repository
-3. The `.nojekyll` file is included for proper GitHub Pages compatibility
+### Step 1: Repository Setup
+✅ **Already completed!** Your code is now hosted at:
+`https://github.com/imarshiyan/Minority-Front`
 
 ### Step 2: Enable GitHub Pages
-1. Go to your repository settings
-2. Navigate to "Pages" section
-3. Under "Source", select "Deploy from a branch"
-4. Choose the `main` branch
-5. Select `/root` as the folder
-6. Click "Save"
+1. Go to your repository: `https://github.com/imarshiyan/Minority-Front`
+2. Click the "Settings" tab
+3. Navigate to "Pages" section in the left sidebar
+4. Under "Source", select "Deploy from a branch"
+5. Choose the `main` branch
+6. Select `/ (root)` as the folder
+7. Click "Save"
 
 ### Step 3: Access Your Website
-Your website will be available at: `https://[username].github.io/Minorityfront/`
+Your website will be available at: `https://imarshiyan.github.io/Minority-Front/`
 
-Example: `https://arshiyann.github.io/Minorityfront/`
+**Note**: It may take a few minutes for GitHub Pages to deploy your site after enabling it.
 
 ## 📁 File Structure
 ```
@@ -110,7 +110,7 @@ All features are client-side only and work perfectly with free GitHub Pages host
 - Static file hosting compatible
 
 ## 📞 Support
-For technical issues or customization requests, contact: `arshiiyan@gmail.com`
+For technical issues or customization requests, contact: `abansar.imaginator111@gmail.com`
 
 ---
 **Minority Front NGO** - Advocating for Minority Rights and Protection with Modern Web Technology
